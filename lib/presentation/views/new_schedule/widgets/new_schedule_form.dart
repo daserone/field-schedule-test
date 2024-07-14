@@ -7,6 +7,7 @@ import 'package:test_agenda/data/models/field_model.dart';
 import 'package:test_agenda/data/models/schedule_model.dart';
 import 'package:test_agenda/domain/provider/schedule_provider.dart';
 import 'package:test_agenda/domain/provider/weather_provider.dart';
+import 'package:test_agenda/domain/router/router_config.dart';
 import 'package:test_agenda/presentation/views/new_schedule/widgets/date_selector.dart';
 import 'package:test_agenda/presentation/views/new_schedule/widgets/time_picker.dart';
 import 'package:test_agenda/presentation/widgets/custom_text.dart';
@@ -189,7 +190,8 @@ class _NewScheduleFormState extends State<NewScheduleForm> {
                                 rainProbability: _rainProb.text,
                                 date: date));
                             weatherProvider.setRaingProb('');
-                            context.go('/dashboard');
+                            GoRouter.of(context)
+                                .clearStackAndNavigate('/dashboard');
                           } else {
                             ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(

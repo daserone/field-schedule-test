@@ -17,6 +17,12 @@ Widget dateSelector(
       hintText: 'Seleccione fecha',
       labelText: hint,
       filled: true,
+      hoverColor: AppColors.lightScaffoldBackgroundColor,
+      focusColor: AppColors.lightScaffoldBackgroundColor,
+      enabledBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: AppColors.secondaryBackgroundColor, width: 1.0),
+      ),
       border: OutlineInputBorder(
         borderSide:
             BorderSide(color: AppColors.secondaryBackgroundColor, width: 1.0),

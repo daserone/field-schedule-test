@@ -15,6 +15,10 @@ Widget timePicker(
       hintText: 'Seleccione hora',
       labelText: hint,
       filled: true,
+      enabledBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: AppColors.secondaryBackgroundColor, width: 1.0),
+      ),
       border: OutlineInputBorder(
         borderSide:
             BorderSide(color: AppColors.secondaryBackgroundColor, width: 1.0),
