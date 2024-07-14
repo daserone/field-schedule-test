@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "name": "Cancha 1",
+  "type": "Tipo A",
+  "availableFrom": "07:00",
+  "availableTo": "14:00",
+  "lat": 2000.0,
+  "lon": 200000.0,
+  "instructorList": [
+    {
+      "name": "Julio",
+      "id": 1
+    }
+  ]
+}
